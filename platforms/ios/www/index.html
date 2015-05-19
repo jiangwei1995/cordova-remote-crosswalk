@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+  Customize this policy to fit your own app's needs. For more guidance, see:
+    https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+  Some notes:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+      * Enable inline JS: add 'unsafe-inline' to default-src
+  -->
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval';
+    connect-src *;
+    script-src 'self' 'unsafe-inline';
+    style-src 'self' 'unsafe-inline';
+    media-src *
+  ">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <title>Launcher</title>
+</head>
+<body>
+
+  <div id="confirm-download" class="modal fade" data-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">
+            发现新版本
+            <small>v<span id="version"></span></small>
+          </h4>
+        </div>
+        <div class="modal-body">
+          <p id="description"></p>
+          <ul id="features">
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" onclick="app.approve()">以后再烦我</button>
+          <button type="button" class="btn btn-primary" onclick="app.update()">更新</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <script src="cordova.js"></script>
+  <script src="js/bluebird.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/semver.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
