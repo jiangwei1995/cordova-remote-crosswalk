@@ -1,10 +1,10 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/com.disusered.open/www/disusered.open.js",
-        "id": "com.disusered.open.Open",
-        "merges": [
-            "cordova.plugins.disusered"
+        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+        "id": "cordova-plugin-splashscreen.SplashScreen",
+        "clobbers": [
+            "navigator.splashscreen"
         ]
     },
     {
@@ -15,10 +15,10 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
-        "id": "cordova-plugin-splashscreen.SplashScreen",
+        "file": "plugins/uk.co.whiteoctober.cordova.appversion/www/AppVersionPlugin.js",
+        "id": "uk.co.whiteoctober.cordova.appversion.AppVersionPlugin",
         "clobbers": [
-            "navigator.splashscreen"
+            "cordova.getAppVersion"
         ]
     },
     {
@@ -29,18 +29,18 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/uk.co.whiteoctober.cordova.appversion/www/AppVersionPlugin.js",
-        "id": "uk.co.whiteoctober.cordova.appversion.AppVersionPlugin",
-        "clobbers": [
-            "cordova.getAppVersion"
-        ]
-    },
-    {
         "file": "plugins/de.appplant.cordova.plugin.badge/www/badge.js",
         "id": "de.appplant.cordova.plugin.badge.Badge",
         "clobbers": [
             "plugin.notification.badge",
             "cordova.plugins.notification.badge"
+        ]
+    },
+    {
+        "file": "plugins/com.disusered.open/www/disusered.open.js",
+        "id": "com.disusered.open.Open",
+        "merges": [
+            "cordova.plugins.disusered"
         ]
     },
     {
@@ -207,17 +207,17 @@ module.exports = [
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "com.disusered.open": "1.0.4",
-    "cordova-plugin-crosswalk-webview": "1.2.0",
-    "cordova-plugin-device": "1.0.0",
     "cordova-plugin-splashscreen": "2.0.0",
     "cordova-plugin-whitelist": "1.0.0",
-    "nl.x-services.plugins.launchmyapp": "3.2.2",
+    "cordova-plugin-device": "1.0.0",
+    "cordova-plugin-crosswalk-webview": "1.2.0",
     "uk.co.whiteoctober.cordova.appversion": "0.1.5",
+    "nl.x-services.plugins.launchmyapp": "3.2.2",
     "de.appplant.cordova.plugin.badge": "0.6.4",
+    "com.disusered.open": "1.0.4",
+    "de.appplant.cordova.common.registerusernotificationsettings": "1.0.1",
     "org.apache.cordova.file": "1.3.3",
-    "org.apache.cordova.file-transfer": "0.5.0",
-    "de.appplant.cordova.common.registerusernotificationsettings": "1.0.1"
+    "org.apache.cordova.file-transfer": "0.5.0"
 }
 // BOTTOM OF METADATA
 });

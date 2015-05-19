@@ -18,6 +18,9 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <engine name="android" spec="^4.0.0" />
+    <engine name="ios" spec="^3.8.0" />
+
     <platform name="android">
         <allow-intent href="market:*" />
         <preference name="SplashScreen" value="screen" />
@@ -28,12 +31,11 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+
     <plugin name="cordova-plugin-crosswalk-webview" spec="^1.2.0" />
     <plugin name="cordova-plugin-splashscreen" spec="^2.0.0" />
     <plugin name="cordova-plugin-device" spec="^1.0.0" />
     <plugin name="cordova-plugin-whitelist" spec="^1.0.0" />
-    <engine name="android" spec="^4.0.0" />
-    <engine name="ios" spec="^3.8.0" />
     <plugin name="com.disusered.open" spec="https://github.com/disusered/cordova-open.git" />
     <plugin name="uk.co.whiteoctober.cordova.appversion" spec="https://github.com/whiteoctober/cordova-plugin-app-version.git" />
     <plugin name="nl.x-services.plugins.launchmyapp" spec="https://github.com/EddyVerbruggen/LaunchMyApp-PhoneGap-Plugin.git">

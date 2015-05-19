@@ -1,6 +1,7 @@
 var BASE_URL = 'http://192.168.0.187:3000';
+var VERSION_BASE_URL = 'http://192.168.0.187:3000';
 var VERSION_PATH = '/version';
-var TARGET_PATH = '/ecp';
+var TARGET_PATH = '/';
 
 var app = {
 
@@ -14,7 +15,7 @@ var app = {
   platform: null,
 
   initialize: function() {
-    Promise.longStackTraces();
+    // Promise.longStackTraces();
     this.readyCheck();
     this.registerPromise();
   },
@@ -53,8 +54,7 @@ var app = {
   },
 
   networkCheck: function () {
-    var platform = device.platform.toLowerCase();
-    var targetURL = BASE_URL + '/' + platform + TARGET_PATH;
+    var targetURL = app.getAppURL();
     console.log('checking:', targetURL);
     $.get(targetURL).then(function () {
       console.log('server ok');
@@ -74,7 +74,7 @@ var app = {
 
   getServerVersion: function () {
     var platform = device.platform.toLowerCase();
-    var versionURL = BASE_URL + VERSION_PATH + '/' + platform;
+    var versionURL = VERSION_BASE_URL + VERSION_PATH + '/' + platform;
 
     console.log('checking server version:', versionURL);
     $.get(versionURL).then(function (result) {
@@ -108,6 +108,10 @@ var app = {
     });
   },
 
+  getAppURL: function() {
+    return BASE_URL + TARGET_PATH;
+  },
+
   update: function () {
     switch (device.platform.toLowerCase()) {
     case 'android':
@@ -123,8 +127,7 @@ var app = {
   },
 
   approve: function () {
-    var platform = device.platform.toLowerCase();
-    var targetURL = BASE_URL + '/' + platform + TARGET_PATH;
+    var targetURL = app.getAppURL();
     console.log('launch app:', targetURL);
     window.location.replace(targetURL);
   }
