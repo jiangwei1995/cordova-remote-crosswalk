@@ -26,6 +26,9 @@ var app = {
     app._ready.promise.then(app.getServerVersion);
 
     app._network.promise.catch(app.noConnection);
+    app._serverVersion.promise.catch(function () {
+      console.log('unable to reach version server');
+    });
 
     Promise.all([
       app._currentVersion.promise,
@@ -39,11 +42,6 @@ var app = {
       app._network.promise,
       app._noUpdate.promise
     ]).then(app.approve);
-  },
-
-  noConnection: function () {
-    console.log('go offine');
-    window.location.replace('no-connection.html');
   },
 
   readyCheck: function() {
@@ -61,7 +59,7 @@ var app = {
       app._network.resolve();
     }, function (result) {
       console.log('server fault');
-      app._network.reject();
+      app._network.reject('no network');
     });
   },
 
@@ -82,7 +80,8 @@ var app = {
       app.updateURL = result.url;
       app._serverVersion.resolve(result);
     }, function () {
-      app._serverVersion.reject();
+      console.log('server error');
+      app._serverVersion.reject('no update');
     });
   },
 
@@ -121,9 +120,14 @@ var app = {
       break;
     case 'ios':
       console.log('update iOS');
-      window.location.replace(updateURL);
+      window.location.replace(app.updateURL);
       break;
     }
+  },
+
+  noConnection: function () {
+    console.log('go offine');
+    window.location.replace('no-connection.html');
   },
 
   approve: function () {

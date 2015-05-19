@@ -21,29 +21,24 @@ var app = {
   },
 
   registerPromise: function () {
-    app._ready.promise.then(app.networkCheck);
+    // app._ready.promise.then(app.networkCheck);
     app._ready.promise.then(app.getCurrentVersion);
     app._ready.promise.then(app.getServerVersion);
 
     app._network.promise.catch(app.noConnection);
 
-    Promise.all([
-      app._currentVersion.promise,
-      app._serverVersion.promise,
-    ]).spread(app.versionCheck).catch(function () {
-      console.log('version error:', arguments);
-      app._noUpdate.resolve();
-    });
-
-    Promise.all([
-      app._network.promise,
-      app._noUpdate.promise
-    ]).then(app.approve);
-  },
-
-  noConnection: function () {
-    console.log('go offine');
-    window.location.replace('no-connection.html');
+    // Promise.all([
+    //   app._currentVersion.promise,
+    //   app._serverVersion.promise,
+    // ]).spread(app.versionCheck).catch(function () {
+    //   console.log('version error:', arguments);
+    //   app._noUpdate.resolve();
+    // });
+    //
+    // Promise.all([
+    //   app._network.promise,
+    //   app._noUpdate.promise
+    // ]).then(app.approve);
   },
 
   readyCheck: function() {
@@ -121,15 +116,20 @@ var app = {
       break;
     case 'ios':
       console.log('update iOS');
-      window.location.replace(updateURL);
+      window.location.replace(app.updateURL);
       break;
     }
+  },
+
+  noConnection: function () {
+    console.log('go offine');
+    // window.location.replace('no-connection.html');
   },
 
   approve: function () {
     var targetURL = app.getAppURL();
     console.log('launch app:', targetURL);
-    window.location.replace(targetURL);
+    // window.location.replace(targetURL);
   }
 
 };
