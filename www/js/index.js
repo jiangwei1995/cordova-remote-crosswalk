@@ -1,5 +1,5 @@
-var BASE_URL = 'http://192.168.0.187:3000';
-var VERSION_BASE_URL = 'http://192.168.0.187:3000';
+var BASE_URL = 'http://123.56.89.86:10091';
+var VERSION_BASE_URL = 'http://123.56.89.86:3000';
 var VERSION_PATH = '/version';
 var TARGET_PATH = '/';
 
@@ -80,7 +80,7 @@ var app = {
       app.updateURL = result.url;
       app._serverVersion.resolve(result);
     }, function () {
-      console.log('server error');
+      console.log('server version error');
       app._serverVersion.reject('no update');
     });
   },
