@@ -31,6 +31,14 @@
                         {
                             "xml": "<feature name=\"AppVersion\"><param name=\"android-package\" value=\"uk.co.whiteoctober.cordova.AppVersion\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"File\"><param name=\"android-package\" value=\"org.apache.cordova.file.FileUtils\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"FileTransfer\"><param name=\"android-package\" value=\"org.apache.cordova.filetransfer.FileTransfer\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -41,6 +49,12 @@
                         {
                             "xml": "<intent-filter><data android:scheme=\"eteng\" /><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /><category android:name=\"android.intent.category.BROWSABLE\" /></intent-filter>",
                             "count": 1
+                        }
+                    ],
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 2
                         }
                     ]
                 }
@@ -66,7 +80,14 @@
         },
         "uk.co.whiteoctober.cordova.appversion": {
             "PACKAGE_NAME": "com.eteng.nhw365"
+        },
+        "org.apache.cordova.file-transfer": {
+            "PACKAGE_NAME": "com.eteng.nhw365"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "org.apache.cordova.file": {
+            "PACKAGE_NAME": "com.eteng.nhw365"
+        }
+    }
 }
