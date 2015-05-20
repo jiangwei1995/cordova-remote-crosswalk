@@ -44,6 +44,14 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+        "id": "cordova-plugin-inappbrowser.inappbrowser",
+        "clobbers": [
+            "cordova.InAppBrowser.open",
+            "window.open"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.file/www/DirectoryEntry.js",
         "id": "org.apache.cordova.file.DirectoryEntry",
         "clobbers": [
@@ -215,6 +223,7 @@ module.exports.metadata =
     "nl.x-services.plugins.launchmyapp": "3.2.2",
     "de.appplant.cordova.plugin.badge": "0.6.4",
     "com.disusered.open": "1.0.4",
+    "cordova-plugin-inappbrowser": "1.0.0",
     "de.appplant.cordova.common.registerusernotificationsettings": "1.0.1",
     "org.apache.cordova.file": "1.3.3",
     "org.apache.cordova.file-transfer": "0.5.0"

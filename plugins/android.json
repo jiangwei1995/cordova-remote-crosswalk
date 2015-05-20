@@ -39,6 +39,10 @@
                         {
                             "xml": "<feature name=\"FileTransfer\"><param name=\"android-package\" value=\"org.apache.cordova.filetransfer.FileTransfer\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -82,6 +86,9 @@
             "PACKAGE_NAME": "com.eteng.nhw365"
         },
         "org.apache.cordova.file-transfer": {
+            "PACKAGE_NAME": "com.eteng.nhw365"
+        },
+        "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.eteng.nhw365"
         }
     },

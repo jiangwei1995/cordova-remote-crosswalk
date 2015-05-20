@@ -1,5 +1,5 @@
-var BASE_URL = 'http://192.168.0.187:3000';
-var VERSION_BASE_URL = 'http://192.168.0.187:3000';
+var BASE_URL = 'http://123.56.89.86:10091';
+var VERSION_BASE_URL = 'http://123.56.89.86:3000';
 var VERSION_PATH = '/version';
 var TARGET_PATH = '/';
 
@@ -21,24 +21,27 @@ var app = {
   },
 
   registerPromise: function () {
-    // app._ready.promise.then(app.networkCheck);
+    app._ready.promise.then(app.networkCheck);
     app._ready.promise.then(app.getCurrentVersion);
     app._ready.promise.then(app.getServerVersion);
 
     app._network.promise.catch(app.noConnection);
+    app._serverVersion.promise.catch(function () {
+      console.log('unable to reach version server');
+    });
 
-    // Promise.all([
-    //   app._currentVersion.promise,
-    //   app._serverVersion.promise,
-    // ]).spread(app.versionCheck).catch(function () {
-    //   console.log('version error:', arguments);
-    //   app._noUpdate.resolve();
-    // });
-    //
-    // Promise.all([
-    //   app._network.promise,
-    //   app._noUpdate.promise
-    // ]).then(app.approve);
+    Promise.all([
+      app._currentVersion.promise,
+      app._serverVersion.promise,
+    ]).spread(app.versionCheck).catch(function () {
+      console.log('version error:', arguments);
+      app._noUpdate.resolve();
+    });
+
+    Promise.all([
+      app._network.promise,
+      app._noUpdate.promise
+    ]).then(app.approve);
   },
 
   readyCheck: function() {
@@ -56,7 +59,7 @@ var app = {
       app._network.resolve();
     }, function (result) {
       console.log('server fault');
-      app._network.reject();
+      app._network.reject('no network');
     });
   },
 
@@ -77,7 +80,8 @@ var app = {
       app.updateURL = result.url;
       app._serverVersion.resolve(result);
     }, function () {
-      app._serverVersion.reject();
+      console.log('server version error');
+      app._serverVersion.reject('no update');
     });
   },
 
@@ -123,13 +127,13 @@ var app = {
 
   noConnection: function () {
     console.log('go offine');
-    // window.location.replace('no-connection.html');
+    window.location.replace('no-connection.html');
   },
 
   approve: function () {
     var targetURL = app.getAppURL();
     console.log('launch app:', targetURL);
-    // window.location.replace(targetURL);
+    window.location.replace(targetURL);
   }
 
 };

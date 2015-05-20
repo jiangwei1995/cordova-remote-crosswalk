@@ -10,7 +10,7 @@
                     "CoreGraphics.framework": [
                         {
                             "xml": false,
-                            "count": 1
+                            "count": 2
                         }
                     ],
                     "AssetsLibrary.framework": [
@@ -69,6 +69,10 @@
                         {
                             "xml": "<feature name=\"Open\"><param name=\"ios-package\" value=\"Open\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"ios-package\" value=\"CDVInAppBrowser\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -109,6 +113,9 @@
             "PACKAGE_NAME": "com.eteng.nhw365"
         },
         "com.disusered.open": {
+            "PACKAGE_NAME": "com.eteng.nhw365"
+        },
+        "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.eteng.nhw365"
         }
     },

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline';
+    connect-src *;
+    script-src 'self' 'unsafe-inline';
+    style-src 'self' 'unsafe-inline';
+    media-src *
+  ">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/no-connection.css">
+
+  <title>No Connection</title>
+</head>
+<body>
+  <div class="page text-center">
+    <div class="main">
+      <img class="logo" src="img/logo.png">
+    </div>
+    <div class="sub">
+      <h2 class="hint">亲　您的网络没连接</h2>
+      <div class="action">
+        <button class="btn btn-lg" onclick="location.replace('./index.html')">
+          <i class="glyphicon glyphicon-refresh"></i>
+          重试
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="cordova.js"></script>
+  <script>
+    document.addEventListener('deviceready', function () {
+      setTimeout(function () {
+        navigator.splashscreen.hide();
+      }, 200);
+    });
+  </script>
+</body>
+</html>

@@ -52,6 +52,7 @@
 		2DD7A35C07E3454D94E7F971 /* Open.m in Sources */ = {isa = PBXBuildFile; fileRef = 67382480223E44B6916E5C2D /* Open.m */; };
 		0BE57F70788648A6BDE4406A /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF4F678D6224BC3A50755A4 /* QuickLook.framework */; };
 		ED53B65332F84527BA129D18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5EE757791544E6489660EC1 /* Foundation.framework */; };
+		9A3F721396124A6AB43E93D6 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F87DB79779495EA383594D /* CDVInAppBrowser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +142,8 @@
 		5FAE8EFE5F194694BFEBEB4F /* Open.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Open.h"; path = "com.disusered.open/Open.h"; sourceTree = "<group>"; fileEncoding = 4; };
 		6EF4F678D6224BC3A50755A4 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "QuickLook.framework"; path = "System/Library/Frameworks/QuickLook.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 		D5EE757791544E6489660EC1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+		90F87DB79779495EA383594D /* CDVInAppBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVInAppBrowser.m"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		28EC16F9EC99414AA306C1F2 /* CDVInAppBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVInAppBrowser.h"; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +268,8 @@
 				CEF6F4848530487FA5768EC6 /* CDVFileTransfer.h */,
 				67382480223E44B6916E5C2D /* Open.m */,
 				5FAE8EFE5F194694BFEBEB4F /* Open.h */,
+				90F87DB79779495EA383594D /* CDVInAppBrowser.m */,
+				28EC16F9EC99414AA306C1F2 /* CDVInAppBrowser.h */,
 			);
 			name = Plugins;
 			path = "农惠网/Plugins";
@@ -460,6 +465,7 @@
 				49723F88BACF44E296034419 /* CDVAssetLibraryFilesystem.m in Sources */,
 				230CEF04DDEF4E04813ABED7 /* CDVFileTransfer.m in Sources */,
 				2DD7A35C07E3454D94E7F971 /* Open.m in Sources */,
+				9A3F721396124A6AB43E93D6 /* CDVInAppBrowser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

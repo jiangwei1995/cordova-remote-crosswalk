@@ -48,6 +48,14 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+        "id": "cordova-plugin-inappbrowser.inappbrowser",
+        "clobbers": [
+            "cordova.InAppBrowser.open",
+            "window.open"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.file/www/DirectoryEntry.js",
         "id": "org.apache.cordova.file.DirectoryEntry",
         "clobbers": [
@@ -204,6 +212,7 @@ module.exports.metadata =
     "nl.x-services.plugins.launchmyapp": "3.2.2",
     "uk.co.whiteoctober.cordova.appversion": "0.1.5",
     "org.apache.cordova.file-transfer": "0.5.0",
+    "cordova-plugin-inappbrowser": "1.0.0",
     "org.apache.cordova.file": "1.3.3"
 }
 // BOTTOM OF METADATA

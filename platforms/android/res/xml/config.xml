@@ -26,6 +26,9 @@
     <feature name="FileTransfer">
         <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
     </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
     <allow-intent href="market:*" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="10000" />

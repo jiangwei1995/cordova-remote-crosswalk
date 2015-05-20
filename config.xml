@@ -42,4 +42,5 @@
         <variable name="URL_SCHEME" value="eteng" />
     </plugin>
     <plugin name="de.appplant.cordova.plugin.badge" spec="https://github.com/katzer/cordova-plugin-badge.git" />
+    <plugin name="cordova-plugin-inappbrowser" spec="^1.0.0" />
 </widget>
