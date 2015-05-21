@@ -136,6 +136,7 @@ var app = {
   approve: function () {
     var targetURL = app.getAppURL();
     console.log('launch app:', targetURL);
+    navigator.splashscreen.hide();
     window.location.replace(targetURL);
   }
 
