@@ -37,18 +37,18 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/com.disusered.open/www/disusered.open.js",
-        "id": "com.disusered.open.Open",
-        "merges": [
-            "cordova.plugins.disusered"
-        ]
-    },
-    {
         "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
         "id": "cordova-plugin-inappbrowser.inappbrowser",
         "clobbers": [
             "cordova.InAppBrowser.open",
             "window.open"
+        ]
+    },
+    {
+        "file": "plugins/com.disusered.open/www/disusered.open.js",
+        "id": "com.disusered.open.Open",
+        "merges": [
+            "cordova.plugins.disusered"
         ]
     },
     {
@@ -222,8 +222,8 @@ module.exports.metadata =
     "uk.co.whiteoctober.cordova.appversion": "0.1.5",
     "nl.x-services.plugins.launchmyapp": "3.2.2",
     "de.appplant.cordova.plugin.badge": "0.6.4",
-    "com.disusered.open": "1.0.4",
     "cordova-plugin-inappbrowser": "1.0.0",
+    "com.disusered.open": "1.0.4",
     "de.appplant.cordova.common.registerusernotificationsettings": "1.0.1",
     "org.apache.cordova.file": "1.3.3",
     "org.apache.cordova.file-transfer": "0.5.0"

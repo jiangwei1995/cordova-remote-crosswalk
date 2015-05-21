@@ -68,15 +68,6 @@
         "is_top_level": false,
         "variables": {}
     },
-    "com.disusered.open": {
-        "source": {
-            "type": "git",
-            "url": "https://github.com/disusered/cordova-open.git",
-            "subdir": "."
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "org.apache.cordova.file": {
         "source": {
             "type": "registry",
@@ -113,6 +104,15 @@
         "source": {
             "type": "registry",
             "id": "cordova-plugin-inappbrowser"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.disusered.open": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/disusered/cordova-open.git",
+            "subdir": "."
         },
         "is_top_level": true,
         "variables": {}
