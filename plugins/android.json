@@ -9,7 +9,7 @@
                 "parents": {
                     "/*": [
                         {
-                            "xml": "<preference name=\"webView\" value=\"org.crosswalk.engine.XWalkWebViewEngine\" />",
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         },
                         {
@@ -17,15 +17,15 @@
                             "count": 1
                         },
                         {
+                            "xml": "<preference name=\"webView\" value=\"org.crosswalk.engine.XWalkWebViewEngine\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"LaunchMyApp\"><param name=\"android-package\" value=\"nl.xservices.plugins.LaunchMyApp\" /></feature>",
                             "count": 1
                         },
                         {
@@ -41,11 +41,15 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+                            "xml": "<feature name=\"Open\"><param name=\"android-package\" value=\"com.disusered.Open\" /></feature>",
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"Open\"><param name=\"android-package\" value=\"com.disusered.Open\" /></feature>",
+                            "xml": "<feature name=\"LaunchMyApp\"><param name=\"android-package\" value=\"nl.xservices.plugins.LaunchMyApp\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Badge\"><param name=\"android-package\" value=\"de.appplant.cordova.plugin.badge.Badge\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -53,16 +57,22 @@
             },
             "AndroidManifest.xml": {
                 "parents": {
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 2
+                        }
+                    ],
                     "/*/application/activity": [
                         {
                             "xml": "<intent-filter><data android:scheme=\"eteng\" /><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /><category android:name=\"android.intent.category.BROWSABLE\" /></intent-filter>",
                             "count": 1
                         }
                     ],
-                    "/*": [
+                    "/manifest/application": [
                         {
-                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
-                            "count": 2
+                            "xml": "<activity android:exported=\"false\" android:launchMode=\"singleInstance\" android:name=\"de.appplant.cordova.plugin.badge.LaunchActivity\" android:theme=\"@android:style/Theme.Black.NoTitleBar\" />",
+                            "count": 1
                         }
                     ]
                 }
@@ -70,38 +80,41 @@
         }
     },
     "installed_plugins": {
-        "cordova-plugin-crosswalk-webview": {
-            "PACKAGE_NAME": "com.eteng.nhw365"
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.eteng.nhw360"
         },
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.eteng.nhw365"
+            "PACKAGE_NAME": "com.eteng.nhw360"
+        },
+        "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "com.eteng.nhw360"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.eteng.nhw360"
         },
         "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.eteng.nhw365"
+            "PACKAGE_NAME": "com.eteng.nhw360"
         },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.eteng.nhw365"
+        "uk.co.whiteoctober.cordova.appversion": {
+            "PACKAGE_NAME": "com.eteng.nhw360"
+        },
+        "com.disusered.open": {
+            "PACKAGE_NAME": "com.eteng.nhw360"
         },
         "nl.x-services.plugins.launchmyapp": {
             "URL_SCHEME": "eteng",
-            "PACKAGE_NAME": "com.eteng.nhw365"
+            "PACKAGE_NAME": "com.eteng.nhw360"
         },
-        "uk.co.whiteoctober.cordova.appversion": {
-            "PACKAGE_NAME": "com.eteng.nhw365"
-        },
-        "org.apache.cordova.file-transfer": {
-            "PACKAGE_NAME": "com.eteng.nhw365"
-        },
-        "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "com.eteng.nhw365"
-        },
-        "com.disusered.open": {
-            "PACKAGE_NAME": "com.eteng.nhw365"
+        "de.appplant.cordova.plugin.badge": {
+            "PACKAGE_NAME": "com.eteng.nhw360"
         }
     },
     "dependent_plugins": {
         "org.apache.cordova.file": {
-            "PACKAGE_NAME": "com.eteng.nhw365"
+            "PACKAGE_NAME": "com.eteng.nhw360"
+        },
+        "org.apache.cordova.file-transfer": {
+            "PACKAGE_NAME": "com.eteng.nhw360"
         }
     }
 }

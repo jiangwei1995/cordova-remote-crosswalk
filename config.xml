@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.eteng.nhw365" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.eteng.nhw360" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>农惠网</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        中国农资旗下电商
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="hr@e-teng.com.cn" href="http://cordova.io">
+        北京易腾时代科技有限公司
     </author>
-    <splash src="res/screen/splash.png" />
-    <icon src="res/icon.png" />
+    <splash src="www/img/splash.png" />
+    <icon src="www/img/icon.png" />
     <content src="index.html" />
     <access origin="*" />
     <allow-navigation href="*" />
@@ -20,6 +20,7 @@
     <allow-intent href="geo:*" />
     <engine name="android" spec="^4.0.0" />
     <engine name="ios" spec="^3.8.0" />
+    <preference name="BackgroundColor" value="0x219D3Bff"/>
     <platform name="android">
         <allow-intent href="market:*" />
         <preference name="SplashScreen" value="screen" />
@@ -30,17 +31,18 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+
     <plugin name="cordova-plugin-crosswalk-webview" spec="^1.2.0" />
+    <plugin name="cordova-plugin-whitelist" spec="^1.0.0" />
     <plugin name="cordova-plugin-splashscreen" spec="^2.0.0" />
     <plugin name="cordova-plugin-device" spec="^1.0.0" />
-    <plugin name="cordova-plugin-whitelist" spec="^1.0.0" />
-    <plugin name="org.apache.cordova.file-transfer" spec="^0.5.0" />
-    <plugin name="org.apache.cordova.file" spec="^1.3.3" />
+    <plugin name="cordova-plugin-inappbrowser" spec="^1.0.0" />
+    <!-- <plugin name="org.apache.cordova.file" spec="^1.3.3" />
+    <plugin name="org.apache.cordova.file-transfer" spec="^0.5.0" /> -->
+    <plugin name="com.disusered.open" spec="https://github.com/disusered/cordova-open.git" />
     <plugin name="uk.co.whiteoctober.cordova.appversion" spec="https://github.com/whiteoctober/cordova-plugin-app-version.git" />
+    <plugin name="de.appplant.cordova.plugin.badge" spec="https://github.com/katzer/cordova-plugin-badge.git" />
     <plugin name="nl.x-services.plugins.launchmyapp" spec="https://github.com/EddyVerbruggen/LaunchMyApp-PhoneGap-Plugin.git">
         <variable name="URL_SCHEME" value="eteng" />
     </plugin>
-    <plugin name="de.appplant.cordova.plugin.badge" spec="https://github.com/katzer/cordova-plugin-badge.git" />
-    <plugin name="cordova-plugin-inappbrowser" spec="^1.0.0" />
-    <plugin name="com.disusered.open" spec="https://github.com/disusered/cordova-open.git" />
 </widget>

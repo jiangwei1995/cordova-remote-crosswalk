@@ -17,7 +17,7 @@
        under the License.
  */
 
-package com.eteng.nhw365;
+package com.eteng.nhw360;
 
 import android.os.Bundle;
 import org.apache.cordova.*;

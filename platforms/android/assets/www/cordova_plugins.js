@@ -1,50 +1,15 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/cordova-plugin-device/www/device.js",
-        "id": "cordova-plugin-device.device",
-        "clobbers": [
-            "device"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
-        "id": "cordova-plugin-splashscreen.SplashScreen",
-        "clobbers": [
-            "navigator.splashscreen"
-        ]
-    },
-    {
         "file": "plugins/cordova-plugin-whitelist/whitelist.js",
         "id": "cordova-plugin-whitelist.whitelist",
         "runs": true
     },
     {
-        "file": "plugins/nl.x-services.plugins.launchmyapp/www/android/LaunchMyApp.js",
-        "id": "nl.x-services.plugins.launchmyapp.LaunchMyApp",
+        "file": "plugins/cordova-plugin-device/www/device.js",
+        "id": "cordova-plugin-device.device",
         "clobbers": [
-            "window.plugins.launchmyapp"
-        ]
-    },
-    {
-        "file": "plugins/uk.co.whiteoctober.cordova.appversion/www/AppVersionPlugin.js",
-        "id": "uk.co.whiteoctober.cordova.appversion.AppVersionPlugin",
-        "clobbers": [
-            "cordova.getAppVersion"
-        ]
-    },
-    {
-        "file": "plugins/org.apache.cordova.file-transfer/www/FileTransferError.js",
-        "id": "org.apache.cordova.file-transfer.FileTransferError",
-        "clobbers": [
-            "window.FileTransferError"
-        ]
-    },
-    {
-        "file": "plugins/org.apache.cordova.file-transfer/www/FileTransfer.js",
-        "id": "org.apache.cordova.file-transfer.FileTransfer",
-        "clobbers": [
-            "window.FileTransfer"
+            "device"
         ]
     },
     {
@@ -56,10 +21,39 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+        "id": "cordova-plugin-splashscreen.SplashScreen",
+        "clobbers": [
+            "navigator.splashscreen"
+        ]
+    },
+    {
+        "file": "plugins/uk.co.whiteoctober.cordova.appversion/www/AppVersionPlugin.js",
+        "id": "uk.co.whiteoctober.cordova.appversion.AppVersionPlugin",
+        "clobbers": [
+            "cordova.getAppVersion"
+        ]
+    },
+    {
         "file": "plugins/com.disusered.open/www/disusered.open.js",
         "id": "com.disusered.open.Open",
         "merges": [
             "cordova.plugins.disusered"
+        ]
+    },
+    {
+        "file": "plugins/nl.x-services.plugins.launchmyapp/www/android/LaunchMyApp.js",
+        "id": "nl.x-services.plugins.launchmyapp.LaunchMyApp",
+        "clobbers": [
+            "window.plugins.launchmyapp"
+        ]
+    },
+    {
+        "file": "plugins/de.appplant.cordova.plugin.badge/www/badge.js",
+        "id": "de.appplant.cordova.plugin.badge.Badge",
+        "clobbers": [
+            "plugin.notification.badge",
+            "cordova.plugins.notification.badge"
         ]
     },
     {
@@ -207,21 +201,36 @@ module.exports = [
             "cordova"
         ],
         "runs": true
+    },
+    {
+        "file": "plugins/org.apache.cordova.file-transfer/www/FileTransferError.js",
+        "id": "org.apache.cordova.file-transfer.FileTransferError",
+        "clobbers": [
+            "window.FileTransferError"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.file-transfer/www/FileTransfer.js",
+        "id": "org.apache.cordova.file-transfer.FileTransfer",
+        "clobbers": [
+            "window.FileTransfer"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "cordova-plugin-crosswalk-webview": "1.2.0",
-    "cordova-plugin-device": "1.0.0",
-    "cordova-plugin-splashscreen": "2.0.0",
     "cordova-plugin-whitelist": "1.0.0",
-    "nl.x-services.plugins.launchmyapp": "3.2.2",
-    "uk.co.whiteoctober.cordova.appversion": "0.1.5",
-    "org.apache.cordova.file-transfer": "0.5.0",
+    "cordova-plugin-device": "1.0.0",
+    "cordova-plugin-crosswalk-webview": "1.2.0",
     "cordova-plugin-inappbrowser": "1.0.0",
+    "cordova-plugin-splashscreen": "2.0.0",
+    "uk.co.whiteoctober.cordova.appversion": "0.1.7",
     "com.disusered.open": "1.0.4",
-    "org.apache.cordova.file": "1.3.3"
+    "nl.x-services.plugins.launchmyapp": "3.2.2",
+    "de.appplant.cordova.plugin.badge": "0.6.4",
+    "org.apache.cordova.file": "1.3.3",
+    "org.apache.cordova.file-transfer": "0.5.0"
 }
 // BOTTOM OF METADATA
 });

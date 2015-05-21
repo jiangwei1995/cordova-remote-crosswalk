@@ -91,8 +91,11 @@ var app = {
 
     app.buildMessage(serverInfo);
     var confirmer = $('#confirm-download');
-    navigator.splashscreen.hide();
-    confirmer.modal('show');
+
+    setTimeout(function () {
+      navigator.splashscreen.hide();
+      confirmer.modal('show');
+    }, 200);
   },
 
   buildMessage: function (serverInfo) {
