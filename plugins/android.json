@@ -13,6 +13,10 @@
                             "count": 1
                         },
                         {
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
                             "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
                             "count": 1
                         },
@@ -25,11 +29,7 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"AppVersion\"><param name=\"android-package\" value=\"uk.co.whiteoctober.cordova.AppVersion\" /></feature>",
+                            "xml": "<feature name=\"LaunchMyApp\"><param name=\"android-package\" value=\"nl.xservices.plugins.LaunchMyApp\" /></feature>",
                             "count": 1
                         },
                         {
@@ -45,11 +45,15 @@
                             "count": 1
                         },
                         {
-                            "xml": "<feature name=\"LaunchMyApp\"><param name=\"android-package\" value=\"nl.xservices.plugins.LaunchMyApp\" /></feature>",
+                            "xml": "<feature name=\"AppVersion\"><param name=\"android-package\" value=\"uk.co.whiteoctober.cordova.AppVersion\" /></feature>",
                             "count": 1
                         },
                         {
                             "xml": "<feature name=\"Badge\"><param name=\"android-package\" value=\"de.appplant.cordova.plugin.badge.Badge\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NativePageTransitions\"><param name=\"android-package\" value=\"com.telerik.plugins.nativepagetransitions.NativePageTransitions\" /><param name=\"onload\" value=\"true\" /></feature>",
                             "count": 1
                         }
                     ]
@@ -57,16 +61,16 @@
             },
             "AndroidManifest.xml": {
                 "parents": {
-                    "/*": [
-                        {
-                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
-                            "count": 2
-                        }
-                    ],
                     "/*/application/activity": [
                         {
                             "xml": "<intent-filter><data android:scheme=\"eteng\" /><action android:name=\"android.intent.action.VIEW\" /><category android:name=\"android.intent.category.DEFAULT\" /><category android:name=\"android.intent.category.BROWSABLE\" /></intent-filter>",
                             "count": 1
+                        }
+                    ],
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 2
                         }
                     ],
                     "/manifest/application": [
@@ -81,40 +85,43 @@
     },
     "installed_plugins": {
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "com.eteng.nhw360"
-        },
-        "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.eteng.nhw360"
-        },
-        "cordova-plugin-crosswalk-webview": {
-            "PACKAGE_NAME": "com.eteng.nhw360"
-        },
-        "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "com.eteng.nhw360"
+            "PACKAGE_NAME": "com.eteng.nhw360_dev"
         },
         "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.eteng.nhw360"
+            "PACKAGE_NAME": "com.eteng.nhw360_dev"
         },
-        "uk.co.whiteoctober.cordova.appversion": {
-            "PACKAGE_NAME": "com.eteng.nhw360"
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.eteng.nhw360_dev"
         },
-        "com.disusered.open": {
-            "PACKAGE_NAME": "com.eteng.nhw360"
+        "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "com.eteng.nhw360_dev"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.eteng.nhw360_dev"
         },
         "nl.x-services.plugins.launchmyapp": {
             "URL_SCHEME": "eteng",
-            "PACKAGE_NAME": "com.eteng.nhw360"
+            "PACKAGE_NAME": "com.eteng.nhw360_dev"
+        },
+        "com.disusered.open": {
+            "PACKAGE_NAME": "com.eteng.nhw360_dev"
+        },
+        "uk.co.whiteoctober.cordova.appversion": {
+            "PACKAGE_NAME": "com.eteng.nhw360_dev"
         },
         "de.appplant.cordova.plugin.badge": {
-            "PACKAGE_NAME": "com.eteng.nhw360"
+            "PACKAGE_NAME": "com.eteng.nhw360_dev"
+        },
+        "com.telerik.plugins.nativepagetransitions": {
+            "PACKAGE_NAME": "com.eteng.nhw360_dev"
         }
     },
     "dependent_plugins": {
         "org.apache.cordova.file": {
-            "PACKAGE_NAME": "com.eteng.nhw360"
+            "PACKAGE_NAME": "com.eteng.nhw360_dev"
         },
         "org.apache.cordova.file-transfer": {
-            "PACKAGE_NAME": "com.eteng.nhw360"
+            "PACKAGE_NAME": "com.eteng.nhw360_dev"
         }
     }
 }

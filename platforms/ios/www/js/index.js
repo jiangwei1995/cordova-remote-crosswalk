@@ -1,6 +1,6 @@
-var BASE_URL = 'http://123.56.89.86:10091';
-var VERSION_BASE_URL = 'http://123.56.89.86:3000';
-var VERSION_PATH = '/version';
+var BASE_URL = 'http://123.56.89.86.20091';
+var VERSION_BASE_URL = 'http://www.nhw360.com:3000';
+var VERSION_PATH = '/nhw360dev';
 var TARGET_PATH = '/';
 
 var app = {
@@ -136,6 +136,7 @@ var app = {
   approve: function () {
     var targetURL = app.getAppURL();
     console.log('launch app:', targetURL);
+    navigator.splashscreen.hide();
     window.location.replace(targetURL);
   }
 

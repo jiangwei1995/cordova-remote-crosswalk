@@ -6,6 +6,13 @@ module.exports = [
         "runs": true
     },
     {
+        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+        "id": "cordova-plugin-splashscreen.SplashScreen",
+        "clobbers": [
+            "navigator.splashscreen"
+        ]
+    },
+    {
         "file": "plugins/cordova-plugin-device/www/device.js",
         "id": "cordova-plugin-device.device",
         "clobbers": [
@@ -21,17 +28,10 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
-        "id": "cordova-plugin-splashscreen.SplashScreen",
+        "file": "plugins/nl.x-services.plugins.launchmyapp/www/android/LaunchMyApp.js",
+        "id": "nl.x-services.plugins.launchmyapp.LaunchMyApp",
         "clobbers": [
-            "navigator.splashscreen"
-        ]
-    },
-    {
-        "file": "plugins/uk.co.whiteoctober.cordova.appversion/www/AppVersionPlugin.js",
-        "id": "uk.co.whiteoctober.cordova.appversion.AppVersionPlugin",
-        "clobbers": [
-            "cordova.getAppVersion"
+            "window.plugins.launchmyapp"
         ]
     },
     {
@@ -42,10 +42,10 @@ module.exports = [
         ]
     },
     {
-        "file": "plugins/nl.x-services.plugins.launchmyapp/www/android/LaunchMyApp.js",
-        "id": "nl.x-services.plugins.launchmyapp.LaunchMyApp",
+        "file": "plugins/uk.co.whiteoctober.cordova.appversion/www/AppVersionPlugin.js",
+        "id": "uk.co.whiteoctober.cordova.appversion.AppVersionPlugin",
         "clobbers": [
-            "window.plugins.launchmyapp"
+            "cordova.getAppVersion"
         ]
     },
     {
@@ -54,6 +54,13 @@ module.exports = [
         "clobbers": [
             "plugin.notification.badge",
             "cordova.plugins.notification.badge"
+        ]
+    },
+    {
+        "file": "plugins/com.telerik.plugins.nativepagetransitions/www/NativePageTransitions.js",
+        "id": "com.telerik.plugins.nativepagetransitions.NativePageTransitions",
+        "clobbers": [
+            "window.plugins.nativepagetransitions"
         ]
     },
     {
@@ -221,14 +228,15 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "cordova-plugin-whitelist": "1.0.0",
+    "cordova-plugin-splashscreen": "2.0.0",
     "cordova-plugin-device": "1.0.0",
     "cordova-plugin-crosswalk-webview": "1.2.0",
     "cordova-plugin-inappbrowser": "1.0.0",
-    "cordova-plugin-splashscreen": "2.0.0",
-    "uk.co.whiteoctober.cordova.appversion": "0.1.7",
-    "com.disusered.open": "1.0.4",
     "nl.x-services.plugins.launchmyapp": "3.2.2",
+    "com.disusered.open": "1.0.4",
+    "uk.co.whiteoctober.cordova.appversion": "0.1.7",
     "de.appplant.cordova.plugin.badge": "0.6.4",
+    "com.telerik.plugins.nativepagetransitions": "0.5.0-dev",
     "org.apache.cordova.file": "1.3.3",
     "org.apache.cordova.file-transfer": "0.5.0"
 }

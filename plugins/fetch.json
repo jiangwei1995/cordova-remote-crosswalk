@@ -7,10 +7,10 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-device": {
+    "cordova-plugin-splashscreen": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-device@^1.0.0"
+            "id": "cordova-plugin-splashscreen@^2.0.0"
         },
         "is_top_level": true,
         "variables": {}
@@ -23,6 +23,14 @@
         "is_top_level": true,
         "variables": {}
     },
+    "cordova-plugin-device": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-device@^1.0.0"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
     "cordova-plugin-inappbrowser": {
         "source": {
             "type": "registry",
@@ -31,22 +39,16 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-splashscreen": {
-        "source": {
-            "type": "registry",
-            "id": "cordova-plugin-splashscreen@^2.0.0"
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
-    "uk.co.whiteoctober.cordova.appversion": {
+    "nl.x-services.plugins.launchmyapp": {
         "source": {
             "type": "git",
-            "url": "https://github.com/whiteoctober/cordova-plugin-app-version.git",
+            "url": "https://github.com/EddyVerbruggen/LaunchMyApp-PhoneGap-Plugin.git",
             "subdir": "."
         },
         "is_top_level": true,
-        "variables": {}
+        "variables": {
+            "URL_SCHEME": "eteng"
+        }
     },
     "com.disusered.open": {
         "source": {
@@ -73,16 +75,14 @@
         "is_top_level": false,
         "variables": {}
     },
-    "nl.x-services.plugins.launchmyapp": {
+    "uk.co.whiteoctober.cordova.appversion": {
         "source": {
             "type": "git",
-            "url": "https://github.com/EddyVerbruggen/LaunchMyApp-PhoneGap-Plugin.git",
+            "url": "https://github.com/whiteoctober/cordova-plugin-app-version.git",
             "subdir": "."
         },
         "is_top_level": true,
-        "variables": {
-            "URL_SCHEME": "eteng"
-        }
+        "variables": {}
     },
     "de.appplant.cordova.plugin.badge": {
         "source": {
@@ -99,6 +99,15 @@
             "id": "de.appplant.cordova.common.registerusernotificationsettings"
         },
         "is_top_level": false,
+        "variables": {}
+    },
+    "com.telerik.plugins.nativepagetransitions": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Telerik-Verified-Plugins/NativePageTransitions.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
         "variables": {}
     }
 }
