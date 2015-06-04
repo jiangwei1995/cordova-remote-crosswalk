@@ -1,10 +1,10 @@
 #!/bin/bash
 
 gulp bump --patch
-cordova build ios --release --device
-/usr/bin/xcrun \
+cordova build ios --device --release
+xcrun \
   -sdk iphoneos PackageApplication \
-  -v "platforms/ios/build/Crocpad.app" \
+  -v "platforms/ios/build/device/nhw-dev.app" \
   -o "./ios.ipa" \
   --sign "iPhone Distribution: Beijing Eteng Technology Co., Ltd" \
   --embed "signatures/ios.mobileprovision"
