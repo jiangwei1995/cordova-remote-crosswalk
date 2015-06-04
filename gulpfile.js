@@ -16,3 +16,5 @@ gulp.task('copy', function () {
     .pipe(gulp.dest('./www/js/'));
 
 });
+
+gulp.task('bump', require('gulp-cordova-bump'));
