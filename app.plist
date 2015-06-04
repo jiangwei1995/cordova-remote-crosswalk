@@ -11,19 +11,19 @@
                     <key>kind</key>
                     <string>software-package</string>
                     <key>url</key>
-                    <string>http://asterix/crocpad/ios/CrocPad.ipa</string>
+                    <string>https://gengen1988.github.io/cordova-remote-crosswalk/app.ipa</string>
                 </dict>
             </array>
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key>
-                <string>com.rhinosw.crocpad</string>
+                <string>com.eteng.nhw360</string>
                 <key>bundle-version</key>
-                <string>0.0.1</string>
+                <string>0.0.6</string>
                 <key>kind</key>
                 <string>software</string>
                 <key>title</key>
-                <string>CrocPad</string>
+                <string>农惠网开发</string>
             </dict>
         </dict>
     </array>
