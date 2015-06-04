@@ -2,3 +2,9 @@
 
 gulp bump --patch
 cordova build ios --release --device
+/usr/bin/xcrun \
+  -sdk iphoneos PackageApplication \
+  -v "platforms/ios/build/Crocpad.app" \
+  -o "./ios.ipa" \
+  --sign "iPhone Distribution: Beijing Eteng Technology Co., Ltd" \
+  --embed "signatures/ios.mobileprovision"
