@@ -1,0 +1,17 @@
+{
+  "name": "mobile-wrapper",
+  "version": "0.0.0",
+  "homepage": "https://github.com/gengen1988/cordova-remote-crosswalk",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery.qrcode": "~0.12.0",
+    "jquery": "~2.1.4"
+  }
+}

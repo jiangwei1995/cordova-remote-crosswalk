@@ -1,4 +1,22 @@
 <html>
-<h1><a href="itms-services://?action=download-manifest&url=https://gengen1988.github.io/cordova-remote-crosswalk/app.plist">iOS</a></h1>
-<h1><a href="android/CrocPad-debug.apk">Android</a></h1>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- bower:js -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/jquery.qrcode/dist/jquery.qrcode.js"></script>
+  <!-- endbower -->
+</head>
+<body>
+  <div id="address"></div>
+
+  <h1><a href="itms-services://?action=download-manifest&url=https://gengen1988.github.io/cordova-remote-crosswalk/app.plist">iOS</a></h1>
+  <h1><a href="android/CrocPad-debug.apk">Android</a></h1>
+  <script>
+    $('#address').qrcode({
+      text: 'http://gengen1988.github.io/cordova-remote-crosswalk/'
+    });
+  </script>
+</body>
 </html>
