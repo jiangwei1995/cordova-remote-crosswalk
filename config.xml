@@ -35,10 +35,8 @@
     <plugin name="cordova-plugin-whitelist" spec="^1.0.0"/>
     <plugin name="cordova-plugin-splashscreen" spec="^2.0.0"/>
     <plugin name="cordova-plugin-device" spec="^1.0.0"/>
-    <plugin name="cordova-plugin-inappbrowser" spec="^1.0.0"/>
     <plugin name="com.disusered.open" spec="https://github.com/disusered/cordova-open.git"/>
     <plugin name="uk.co.whiteoctober.cordova.appversion" spec="https://github.com/whiteoctober/cordova-plugin-app-version.git"/>
-    <plugin name="de.appplant.cordova.plugin.badge" spec="https://github.com/katzer/cordova-plugin-badge.git"/>
     <plugin name="nl.x-services.plugins.launchmyapp" spec="https://github.com/EddyVerbruggen/LaunchMyApp-PhoneGap-Plugin.git">
         <variable name="URL_SCHEME" value="eteng"/>
     </plugin>
