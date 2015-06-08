@@ -1,0 +1,11 @@
+#!/bin/bash
+
+jarsigner \
+  -verbose \
+  -sigalg SHA1withRSA \
+  -digestalg SHA1 \
+  -keystore signatures/android.keystore \
+  nhw360-0.0.15.apk \
+  alias_name
+
+# password: yiteng

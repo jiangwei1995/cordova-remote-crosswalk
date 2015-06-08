@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.eteng.nhw360" version="0.0.6">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.eteng.nhw360" version="0.0.15">
     <name>农惠网</name>
     <description>
         中国农资旗下电商
@@ -7,7 +7,7 @@
     <author email="hr@e-teng.com.cn" href="http://cordova.io">
         北京易腾时代科技有限公司
     </author>
-    <icon src="www/img/icon.png" />
+    <icon src="www/img/icon.png"/>
     <splash src="www/img/splash.png"/>
     <content src="index.html"/>
     <access origin="*"/>

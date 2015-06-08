@@ -1,9 +1,14 @@
 {
   "name": "mobile-wrapper",
-  "version": "0.0.6",
+  "version": "0.0.15",
   "description": "",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "bluebird": "^2.9.27",
+    "bootstrap": "^3.3.4",
+    "jquery": "^2.1.4",
+    "semver": "^4.3.6"
+  },
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-cordova-bump": "^1.2.2"
