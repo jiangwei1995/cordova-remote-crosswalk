@@ -1,11 +1,11 @@
 #!/bin/bash
 
 ./pack
-gulp bump --patch
+# gulp bump --patch
 cordova build ios --device --release
 xcrun \
   -sdk iphoneos PackageApplication \
   -v "platforms/ios/build/device/农惠网.app" \
-  -o "/home/eteng/ios.ipa" \
+  -o "/Users/eteng/nhw360.ipa" \
   --sign "iPhone Distribution: Beijing Eteng Technology Co., Ltd" \
   --embed "signatures/ios.mobileprovision"
