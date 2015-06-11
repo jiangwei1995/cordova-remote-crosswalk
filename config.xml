@@ -1,43 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.eteng.nhw360" version="0.0.15">
-    <name>农惠网</name>
-    <description>
-        中国农资旗下电商
-    </description>
-    <author email="hr@e-teng.com.cn" href="http://cordova.io">
-        北京易腾时代科技有限公司
-    </author>
-    <icon src="www/img/icon.png"/>
-    <splash src="www/img/splash.png"/>
-    <content src="index.html"/>
-    <access origin="*"/>
-    <allow-navigation href="*"/>
-    <allow-intent href="http://*/*"/>
-    <allow-intent href="https://*/*"/>
-    <allow-intent href="tel:*"/>
-    <allow-intent href="sms:*"/>
-    <allow-intent href="mailto:*"/>
-    <allow-intent href="geo:*"/>
-    <engine name="android" spec="^4.0.0"/>
-    <engine name="ios" spec="^3.8.0"/>
-    <preference name="BackgroundColor" value="0xffffffff"/>
-    <platform name="android">
-        <allow-intent href="market:*"/>
-        <preference name="SplashScreen" value="screen"/>
-        <preference name="SplashScreenDelay" value="10000"/>
-        <preference name="AndroidLaunchMode" value="singleTop"/>
-    </platform>
-    <platform name="ios">
-        <allow-intent href="itms:*"/>
-        <allow-intent href="itms-apps:*"/>
-    </platform>
-    <plugin name="cordova-plugin-crosswalk-webview" spec="^1.2.0"/>
-    <plugin name="cordova-plugin-whitelist" spec="^1.0.0"/>
-    <plugin name="cordova-plugin-splashscreen" spec="^2.0.0"/>
-    <plugin name="cordova-plugin-device" spec="^1.0.0"/>
-    <plugin name="com.disusered.open" spec="https://github.com/disusered/cordova-open.git"/>
-    <plugin name="uk.co.whiteoctober.cordova.appversion" spec="https://github.com/whiteoctober/cordova-plugin-app-version.git"/>
-    <plugin name="nl.x-services.plugins.launchmyapp" spec="https://github.com/EddyVerbruggen/LaunchMyApp-PhoneGap-Plugin.git">
-        <variable name="URL_SCHEME" value="eteng"/>
-    </plugin>
+  
+  <name>农惠网</name>
+  <description>
+    中国农资旗下电商
+  </description>
+  <author email="hr@e-teng.com.cn" href="http://cordova.io">
+    北京易腾时代科技有限公司
+  </author>
+
+  <icon src="www/img/icon.png"/>
+  <splash src="www/img/splash.png"/>
+
+  <content src="index.html"/>
+
+  <access origin="*"/>
+  <allow-navigation href="*"/>
+  <allow-intent href="http://*/*"/>
+  <allow-intent href="https://*/*"/>
+  <allow-intent href="tel:*"/>
+  <allow-intent href="sms:*"/>
+  <allow-intent href="mailto:*"/>
+  <allow-intent href="geo:*"/>
+
+  <engine name="android" spec="^4.0.0"/>
+  <engine name="ios" spec="^3.8.0"/>
+
+  <preference name="BackgroundColor" value="0xffffffff"/>
+
+  <platform name="android">
+    <allow-intent href="market:*"/>
+    <preference name="SplashScreen" value="screen"/>
+    <preference name="SplashScreenDelay" value="10000"/>
+    <preference name="AndroidLaunchMode" value="singleTop"/>
+  </platform>
+
+  <platform name="ios">
+    <allow-intent href="itms:*"/>
+    <allow-intent href="itms-apps:*"/>
+  </platform>
+
+  <plugin name="cordova-plugin-crosswalk-webview" spec="^1.2.0"/>
+  <plugin name="cordova-plugin-whitelist" spec="^1.0.0"/>
+  <plugin name="cordova-plugin-splashscreen" spec="^2.0.0"/>
+  <plugin name="cordova-plugin-device" spec="^1.0.0"/>
+  <plugin name="com.disusered.open" spec="https://github.com/disusered/cordova-open.git"/>
+  <plugin name="uk.co.whiteoctober.cordova.appversion" spec="https://github.com/whiteoctober/cordova-plugin-app-version.git"/>
+  <plugin name="nl.x-services.plugins.launchmyapp" spec="https://github.com/EddyVerbruggen/LaunchMyApp-PhoneGap-Plugin.git">
+    <variable name="URL_SCHEME" value="eteng"/>
+  </plugin>
 </widget>
