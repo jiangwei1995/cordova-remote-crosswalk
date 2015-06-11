@@ -1,0 +1,4 @@
+#!/bin/bash
+
+browserify www/src/index.js > www/js/index.js
+browserify www/src/download.js > www/js/download.js
