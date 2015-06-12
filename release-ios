@@ -5,7 +5,7 @@
 cordova build ios --device --release
 xcrun \
   -sdk iphoneos PackageApplication \
-  -v "platforms/ios/build/device/农惠网.app" \
-  -o "/Users/eteng/nhw360.ipa" \
+  -v "platforms/ios/build/device/HelloCordova.app" \
+  -o "/Users/eteng/hellocordova.ipa" \
   --sign "iPhone Distribution: Beijing Eteng Technology Co., Ltd" \
-  --embed "signatures/ios.mobileprovision"
+  --embed "bspbossdistribute.mobileprovision"
