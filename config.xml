@@ -18,7 +18,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <engine name="ios" spec="^3.8.0" />
+
     <preference name="BackgroundColor" value="0xffffffff" />
     <platform name="android">
         <allow-intent href="market:*" />
