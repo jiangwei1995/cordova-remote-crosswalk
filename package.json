@@ -1,6 +1,6 @@
 {
   "name": "mobile-wrapper",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
