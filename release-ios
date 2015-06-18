@@ -6,6 +6,6 @@ cordova build ios --device --release
 xcrun \
   -sdk iphoneos PackageApplication \
   -v "platforms/ios/build/device/HelloCordova.app" \
-  -o "/Users/eteng/hellocordova.ipa" \
+  -o "/Users/eteng/农惠网.ipa" \
   --sign "iPhone Distribution: CNAMPGC Holding Co., Ltd. (2H2M5TDW9J)" \
   --embed "signatures/nhw360_distribute.mobileprovision"
