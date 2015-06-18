@@ -7,5 +7,5 @@ xcrun \
   -sdk iphoneos PackageApplication \
   -v "platforms/ios/build/device/HelloCordova.app" \
   -o "/Users/eteng/hellocordova.ipa" \
-  --sign "iPhone Distribution: Beijing Eteng Technology Co., Ltd" \
-  --embed "bspbossdistribute.mobileprovision"
+  --sign "iPhone Distribution: CNAMPGC Holding Co., Ltd. (2H2M5TDW9J)" \
+  --embed "nhw360_distribute.mobileprovision"
