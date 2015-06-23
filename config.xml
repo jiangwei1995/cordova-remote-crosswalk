@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.eteng.nhw360" version="0.0.20">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.eteng.nhw360" version="0.0.21">
     <name>农惠网</name>
     <description>
       中国农资旗下电商
@@ -8,7 +8,7 @@
       北京易腾时代科技有限公司
     </author>
     <icon src="www/img/icon.png"/>
-    <splash src="www/img/app/assets/android/images/res-nolong-port-xxhdpi/default.png"/>
+    <splash src="www/img/app/assets/android/default.png"/>
     <content src="index.html"/>
     <access origin="*"/>
     <allow-navigation href="*"/>
@@ -24,6 +24,11 @@
         <preference name="SplashScreen" value="screen"/>
         <preference name="SplashScreenDelay" value="10000"/>
         <preference name="AndroidLaunchMode" value="singleTop"/>
+        <splash src="www/img/app/assets/android/images/res-notlong-port-hdpi/default.png" density="port-hdpi"/>
+        <splash src="www/img/app/assets/android/images/res-notlong-port-ldpi/default.png" density="port-ldpi"/>
+        <splash src="www/img/app/assets/android/images/res-notlong-port-mdpi/default.png" density="port-mdpi"/>
+        <splash src="www/img/app/assets/android/images/res-notlong-port-xhdpi/default.png" density="port-xhdpi"/>
+        <splash src="www/img/app/assets/android/images/res-notlong-port-xxhdpi/default.png" density="port-xxhdpi"/>
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*"/>
@@ -39,7 +44,6 @@
         <icon height="144" src="www/img/ios/Icon-72@2x.png" width="144"/>
         <icon height="29" src="www/img/ios/Icon-small.png" width="29"/>
         <icon height="58" src="www/img/ios/Icon-small@2x.png" width="58"/>
-
         <splash height="480" src="www/img/app/assets/iphone/Default.png" width="320"/>
         <splash height="960" src="www/img/app/assets/iphone/Default@2x.png" width="640"/>
         <splash height="1136" src="www/img/app/assets/iphone/Default-568h@2x.png" width="640"/>
@@ -50,9 +54,9 @@
     <plugin name="cordova-plugin-whitelist" spec="^1.0.0"/>
     <plugin name="cordova-plugin-splashscreen" spec="^2.0.0"/>
     <plugin name="cordova-plugin-device" spec="^1.0.0"/>
-    <plugin name="uk.co.whiteoctober.cordova.appversion" spec="https://github.com/whiteoctober/cordova-plugin-app-version.git"/>
-    <plugin name="nl.x-services.plugins.launchmyapp" spec="https://github.com/EddyVerbruggen/LaunchMyApp-PhoneGap-Plugin.git">
+    <plugin name="nl.x-services.plugins.launchmyapp" spec="^3.2.2">
         <variable name="URL_SCHEME" value="eteng"/>
     </plugin>
     <plugin name="cordova-open" spec="^1.0.8"/>
+    <plugin name="cordova-plugin-appversion" spec="^1.0.0"/>
 </widget>
