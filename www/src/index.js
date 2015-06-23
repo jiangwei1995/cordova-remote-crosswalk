@@ -1,4 +1,4 @@
-var BASE_URL = 'http://123.56.89.86:20091';
+var BASE_URL = 'http://www.nhw360.com';
 var VERSION_BASE_URL = 'http://www.nhw360.com:3000';
 var VERSION_PATH = '/nhw360dev';
 var TARGET_PATH = '/';
