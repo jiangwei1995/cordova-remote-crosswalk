@@ -8,4 +8,4 @@ xcrun \
   -v "platforms/ios/build/device/农惠网.app" \
   -o "/Users/eteng/nhw360.ipa" \
   --sign "iPhone Distribution: CNAMPGC Holding Co., Ltd. (2H2M5TDW9J)" \
-  --embed "signatures/nhw360_distribute.mobileprovision"
+  --embed "signatures/nhw_distribution.mobileprovision"
