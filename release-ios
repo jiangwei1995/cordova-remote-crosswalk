@@ -1,11 +1,19 @@
 #!/bin/bash
 
+# compile js
 ./pack
 # gulp bump --patch
+
+# build
 cordova build ios --device --release
+
+# pack
 xcrun \
   -sdk iphoneos PackageApplication \
   -v "platforms/ios/build/device/农惠网.app" \
-  -o "/Users/eteng/nhw360.ipa" \
-  --sign "iPhone Distribution: CNAMPGC Holding Co., Ltd. (2H2M5TDW9J)" \
-  --embed "signatures/nhw_distribution.mobileprovision"
+  -o "/Users/eteng/nhw360.ipa"
+
+# sign & provision
+sigh resign "/Users/eteng/nhw360.ipa" \
+  -i "iPhone Distribution: CNAMPGC Holding Co., Ltd. (2H2M5TDW9J)" \
+  -p "signatures/nhw360_distribution_appstore.mobileprovision"

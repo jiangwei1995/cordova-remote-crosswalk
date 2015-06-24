@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.eteng.nhw360e" version="0.0.22">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" id="com.eteng.nhw360" version="0.0.22">
     <name>农惠网</name>
     <description>
       中国农资旗下电商
@@ -11,6 +11,8 @@
     <splash src="www/img/app/assets/android/default.png"/>
     <content src="index.html"/>
     <access origin="*"/>
+    <!-- <allow-navigation href="*://*.nhw360.com/*" />
+    <allow-navigation href="*://123.57.75.94:8080/*" /> -->
     <allow-navigation href="*"/>
     <allow-intent href="http://*/*"/>
     <allow-intent href="https://*/*"/>
@@ -24,6 +26,9 @@
         <preference name="SplashScreen" value="screen"/>
         <preference name="SplashScreenDelay" value="10000"/>
         <preference name="AndroidLaunchMode" value="singleTop"/>
+
+        <preference name="ErrorUrl" value="file:///android_asset/www/no-connection.html" />
+
         <splash src="www/img/app/assets/android/images/res-notlong-port-hdpi/default.png" density="port-hdpi"/>
         <splash src="www/img/app/assets/android/images/res-notlong-port-ldpi/default.png" density="port-ldpi"/>
         <splash src="www/img/app/assets/android/images/res-notlong-port-mdpi/default.png" density="port-mdpi"/>
@@ -33,6 +38,9 @@
     <platform name="ios">
         <allow-intent href="itms:*"/>
         <allow-intent href="itms-apps:*"/>
+
+        <preference name="ErrorUrl" value="/no-connection.html" />
+
         <icon height="180" src="www/img/ios/Icon-60@3x.png" width="180"/>
         <icon height="60" src="www/img/ios/Icon-60.png" width="60"/>
         <icon height="120" src="www/img/ios/Icon-60@2x.png" width="120"/>
