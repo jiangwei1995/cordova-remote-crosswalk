@@ -1,11 +1,19 @@
 #!/bin/bash
 
+# compile js
 ./pack
 # gulp bump --patch
+
+# build
 cordova build ios --device --release
+
+# pack
 xcrun \
   -sdk iphoneos PackageApplication \
   -v "platforms/ios/build/device/农惠网.app" \
   -o "/Users/eteng/nhw360-enterprise.ipa" \
-  --sign "Beijing Eteng Technology Co., Ltd" \
-  --embed "signatures/enterprise_distribution.mobileprovision"
+
+# sign & provision
+sigh resign "/Users/eteng/nhw360-enterprise.ipa" \
+  -i "Beijing Eteng Technology Co., Ltd" \
+  -p "signatures/enterprise_distribution.mobileprovision"
