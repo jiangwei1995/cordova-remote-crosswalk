@@ -1,0 +1,11 @@
+#!/bin/bash
+
+./pack
+# gulp bump --patch
+cordova build ios --device --release
+xcrun \
+  -sdk iphoneos PackageApplication \
+  -v "platforms/ios/build/device/农惠网.app" \
+  -o "/Users/eteng/nhw360-enterprise.ipa" \
+  --sign "Beijing Eteng Technology Co., Ltd" \
+  --embed "signatures/enterprise_distribution.mobileprovision"
