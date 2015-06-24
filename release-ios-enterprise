@@ -16,4 +16,4 @@ xcrun \
 # sign & provision
 sigh resign "/Users/eteng/nhw360-enterprise.ipa" \
   -i "Beijing Eteng Technology Co., Ltd" \
-  -p "signatures/enterprise_distribution.mobileprovision"
+  -p "signatures/nhw360_distribution_enterprise.mobileprovision"
