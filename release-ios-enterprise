@@ -11,7 +11,7 @@ cordova build ios --device --release
 xcrun \
   -sdk iphoneos PackageApplication \
   -v "platforms/ios/build/device/农惠网.app" \
-  -o "/Users/eteng/nhw360-enterprise.ipa" \
+  -o "/Users/eteng/nhw360-enterprise.ipa"
 
 # sign & provision
 sigh resign "/Users/eteng/nhw360-enterprise.ipa" \
