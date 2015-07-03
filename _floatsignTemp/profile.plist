@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppIDName</key>
+	<string>nhw360</string>
+	<key>ApplicationIdentifierPrefix</key>
+	<array>
+	<string>ERAV3R3AQ5</string>
+	</array>
+	<key>CreationDate</key>
+	<date>2015-06-24T04:47:54Z</date>
+	<key>Platform</key>
+	<array>
+		<string>iOS</string>
+	</array>
+	<key>DeveloperCertificates</key>
+	<array>
+		<data>MIIFqjCCBJKgAwIBAgIIJiTy/QhFbtMwDQYJKoZIhvcNAQEFBQAwgZYxCzAJBgNVBAYTAlVTMRMwEQYDVQQKDApBcHBsZSBJbmMuMSwwKgYDVQQLDCNBcHBsZSBXb3JsZHdpZGUgRGV2ZWxvcGVyIFJlbGF0aW9uczFEMEIGA1UEAww7QXBwbGUgV29ybGR3aWRlIERldmVsb3BlciBSZWxhdGlvbnMgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkwHhcNMTUwNjAzMTE0NzIxWhcNMTgwNjAyMTE0NzIxWjCBqzEaMBgGCgmSJomT8ixkAQEMCkVSQVYzUjNBUTUxPzA9BgNVBAMMNmlQaG9uZSBEaXN0cmlidXRpb246IEJlaWppbmcgRXRlbmcgVGVjaG5vbG9neSBDby4sIEx0ZDETMBEGA1UECwwKRVJBVjNSM0FRNTEqMCgGA1UECgwhQmVpamluZyBFdGVuZyBUZWNobm9sb2d5IENvLiwgTHRkMQswCQYDVQQGEwJVUzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANjOa8I4lsA0/yCQkI3csHdq5AMPv6qU2YeegKKdbPGeni2tVQKVbqEFmjkFcqactyteLuXHw0D/QCgFhc6NCa02cPDn6Ghbywd2s6NtNtzrUQhrLaTtgB4wwKnhmdHDtsaJgnmPIjIP1QIy9fvsQBJELDVHEN1lcg/gnVad9yCPt9oSj8UzlZ7RzaOMSR+LIhIMJyLFyI637vc2nXGhebiqf3dk45SMl6CS3exGwq3RUnwQqx4K36XSV1U/P2d7kVAne0cxxC3WNOCj1o+tJtpHii6qiC5Ax2XQZDFL4GkIYZIuaG/au3SIZ4fpuN7TXi7HLUpuAvKMJ0UeWBHYCLsCAwEAAaOCAeMwggHfMD8GCCsGAQUFBwEBBDMwMTAvBggrBgEFBQcwAYYjaHR0cDovL29jc3AuYXBwbGUuY29tL29jc3AwMi13d2RyMDEwHQYDVR0OBBYEFJQ0zN2Zrb5N11J/j+zUa8VjbpbxMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUiCcXCam2GGCL7Ou69kdZxVJUo7cwggEPBgNVHSAEggEGMIIBAjCB/wYJKoZIhvdjZAUBMIHxMIHDBggrBgEFBQcCAjCBtgyBs1JlbGlhbmNlIG9uIHRoaXMgY2VydGlmaWNhdGUgYnkgYW55IHBhcnR5IGFzc3VtZXMgYWNjZXB0YW5jZSBvZiB0aGUgdGhlbiBhcHBsaWNhYmxlIHN0YW5kYXJkIHRlcm1zIGFuZCBjb25kaXRpb25zIG9mIHVzZSwgY2VydGlmaWNhdGUgcG9saWN5IGFuZCBjZXJ0aWZpY2F0aW9uIHByYWN0aWNlIHN0YXRlbWVudHMuMCkGCCsGAQUFBwIBFh1odHRwOi8vd3d3LmFwcGxlLmNvbS9hcHBsZWNhLzAOBgNVHQ8BAf8EBAMCB4AwFgYDVR0lAQH/BAwwCgYIKwYBBQUHAwMwEwYKKoZIhvdjZAYBBAEB/wQCBQAwDQYJKoZIhvcNAQEFBQADggEBAJtPaLK3d3sq8bOKIlXvaAymujbDp5PtfCgrX0YcAsCRllAxxXo4XowcQwZajL+Iniqawnz/Bg63ww2R+UOwzM3gJ5juHPBRLqDwk9e1troOKe4ZzZIqC70yLZ533l6ZDIYSYVGQOw1JZ3sdBiYiF/eStRR1U5c9+yiFfRsVv4KwO3yn07oL36QM+331/y/TXIDfgUuh9MIjz1jOBcPwst5qmonoTmTDgeQkhcU00OxyCQR3Yo0nNbbNWn5w/flyyZRkNXLO/3uAoEiCOBjGW1rXHqi9McIyKzjmmIEXXnAooAQhkd6+VP10CWFKQ82UIk3Ni23fvfquony+Hl2+aCU=</data>
+	</array>
+	<key>Entitlements</key>
+	<dict>
+		<key>keychain-access-groups</key>
+		<array>
+			<string>ERAV3R3AQ5.*</string>		
+		</array>
+		<key>get-task-allow</key>
+		<false/>
+		<key>application-identifier</key>
+		<string>ERAV3R3AQ5.com.eteng.nhw360e</string>
+		<key>com.apple.developer.team-identifier</key>
+		<string>ERAV3R3AQ5</string>
+
+	</dict>
+	<key>ExpirationDate</key>
+	<date>2016-06-23T04:47:54Z</date>
+	<key>Name</key>
+	<string>nhw360 distribution enterprise</string>
+	<key>ProvisionsAllDevices</key>
+	<true/>
+	<key>TeamIdentifier</key>
+	<array>
+		<string>ERAV3R3AQ5</string>
+	</array>
+	<key>TeamName</key>
+	<string>Beijing Eteng Technology Co., Ltd</string>
+	<key>TimeToLive</key>
+	<integer>365</integer>
+	<key>UUID</key>
+	<string>f9b37a56-16b6-4bc6-9a70-d860a69865e6</string>
+	<key>Version</key>
+	<integer>1</integer>
+</dict>
+</plist>
