@@ -39,8 +39,6 @@
         <allow-intent href="itms:*"/>
         <allow-intent href="itms-apps:*"/>
 
-        <preference name="ErrorUrl" value="/no-connection.html"/>
-
         <icon height="180" src="www/img/ios/Icon-60@3x.png" width="180"/>
         <icon height="60" src="www/img/ios/Icon-60.png" width="60"/>
         <icon height="120" src="www/img/ios/Icon-60@2x.png" width="120"/>

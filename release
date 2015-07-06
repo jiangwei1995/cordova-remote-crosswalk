@@ -11,5 +11,5 @@ jarsigner \
   -keystore signatures/android.keystore \
   android-armv7-release-unsigned.apk \
   alias_name
-
+mv android-armv7-release-unsigned.apk android-armv7-release.apk
 # password: yiteng
