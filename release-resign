@@ -5,7 +5,7 @@ jarsigner \
   -sigalg SHA1withRSA \
   -digestalg SHA1 \
   -keystore signatures/android.keystore \
-  "com.eteng.nhw360.encrypted(4).apk" \
+  "com.eteng.nhw360.encrypted.apk" \
   alias_name
 
 # password: yiteng
