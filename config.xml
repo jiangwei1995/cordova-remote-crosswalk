@@ -23,7 +23,7 @@
         <allow-intent href="market:*"/>
         <preference name="SplashScreen" value="screen"/>
         <preference name="SplashScreenDelay" value="10000"/>
-        <preference name="AndroidLaunchMode" value="singleTop"/>
+        <preference name="AndroidLaunchMode" value="singleInstance"/>
 
         <icon src="www/img/icon.png"/>
         <splash src="www/img/screen/android/default.png" density="hdpi"/>
