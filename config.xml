@@ -8,7 +8,7 @@
       北京易腾时代科技有限公司
     </author>
     <icon src="www/img/icon.png"/>
-    <splash src="www/img/app/assets/android/default.png"/>
+    <!-- <splash src="www/img/screen/android/default.png"/> -->
     <content src="index.html"/>
     <access origin="*"/>
     <!-- <allow-navigation href="*://*.nhw360.com/*" />
@@ -27,19 +27,18 @@
         <preference name="SplashScreenDelay" value="10000"/>
         <preference name="AndroidLaunchMode" value="singleTop"/>
 
-        <preference name="ErrorUrl" value="file:///android_asset/www/no-connection.html" />
+        <splash src="www/img/screen/android/default.png" density="hdpi"/>
+        <splash src="www/img/screen/android/default.png" density="ldpi"/>
+        <splash src="www/img/screen/android/default.png" density="mdpi"/>
+        <splash src="www/img/screen/android/default.png" density="xhdpi"/>
 
-        <splash src="www/img/app/assets/android/images/res-notlong-port-hdpi/default.png" density="port-hdpi"/>
-        <splash src="www/img/app/assets/android/images/res-notlong-port-ldpi/default.png" density="port-ldpi"/>
-        <splash src="www/img/app/assets/android/images/res-notlong-port-mdpi/default.png" density="port-mdpi"/>
-        <splash src="www/img/app/assets/android/images/res-notlong-port-xhdpi/default.png" density="port-xhdpi"/>
-        <splash src="www/img/app/assets/android/images/res-notlong-port-xxhdpi/default.png" density="port-xxhdpi"/>
+        <preference name="ErrorUrl" value="file:///android_asset/www/no-connection.html" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*"/>
         <allow-intent href="itms-apps:*"/>
 
-        <preference name="ErrorUrl" value="/no-connection.html" />
+        <!-- <preference name="ErrorUrl" value="/no-connection.html" /> -->
 
         <icon height="180" src="www/img/ios/Icon-60@3x.png" width="180"/>
         <icon height="60" src="www/img/ios/Icon-60.png" width="60"/>
@@ -52,11 +51,11 @@
         <icon height="144" src="www/img/ios/Icon-72@2x.png" width="144"/>
         <icon height="29" src="www/img/ios/Icon-small.png" width="29"/>
         <icon height="58" src="www/img/ios/Icon-small@2x.png" width="58"/>
-        <splash height="480" src="www/img/app/assets/iphone/Default.png" width="320"/>
-        <splash height="960" src="www/img/app/assets/iphone/Default@2x.png" width="640"/>
-        <splash height="1136" src="www/img/app/assets/iphone/Default-568h@2x.png" width="640"/>
-        <splash height="1334" src="www/img/app/assets/iphone/Default-667h@2x.png" width="750"/>
-        <splash height="2208" src="www/img/app/assets/iphone/Default-Portrait-736h@3x.png" width="1242"/>
+        <splash height="480" src="www/img/screen/iphone/Default.png" width="320"/>
+        <splash height="960" src="www/img/screen/iphone/Default@2x.png" width="640"/>
+        <splash height="1136" src="www/img/screen/iphone/Default-568h@2x.png" width="640"/>
+        <splash height="1334" src="www/img/screen/iphone/Default-667h@2x.png" width="750"/>
+        <splash height="2208" src="www/img/screen/iphone/Default-Portrait-736h@3x.png" width="1242"/>
     </platform>
     <plugin name="cordova-plugin-crosswalk-webview" spec="^1.2.0"/>
     <plugin name="cordova-plugin-whitelist" spec="~1.0.0"/>
