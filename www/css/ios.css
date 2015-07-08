@@ -1,0 +1,35 @@
+/** iPhone 6 */
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+  .main {
+    background-image: url(img/app/assets/iphone/Default-667h@2x.png);
+  }
+}
+
+/** iPhone 6 Plus */
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) {
+  .main {
+    background-image: url(img/app/assets/iphone/Default-Portrait-736h@3x.png);
+  }
+}
+
+/** iPhone 5 & 5s */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  .main {
+    background-image: url(img/app/assets/iphone/Default-568h@2x.png);
+  }
+}
+
+/** iPhone 2G -4S */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  .main {
+    background-image: url(img/app/assets/iphone/Default@2x.png);
+  }
+}

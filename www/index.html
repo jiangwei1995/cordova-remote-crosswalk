@@ -20,18 +20,31 @@
   <link rel="stylesheet" href="css/index.css">
 
   <title>Launcher</title>
+  <script>
+  /**
+   * fix for ios splashscreen                                        [description]
+   */
+  if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+    var file=document.createElement('link');
+    file.setAttribute('rel', 'stylesheet');
+    file.setAttribute('href', 'css/ios.css');
+    document.getElementsByTagName('head')[0].appendChild(file);
+  }
+  </script>
   <style>
-    .main {
-      height: 100vh;
-      background-image: url(img/default.png);
-      background-size: 100% 100%;
-      background-position: center center;
-    }
+  /**
+   * default splashscreen
+   */
+  .main {
+    height: 100vh;
+    background-image: url(img/default.png);
+    background-size: 100% 100%;
+    background-position: center center;
+  }
   </style>
 </head>
 <body>
 
-  <!-- <iframe class="main"></iframe> -->
   <div class="main">
 
   </div>
