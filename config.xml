@@ -7,8 +7,6 @@
     <author email="hr@e-teng.com.cn" href="http://cordova.io">
       北京易腾时代科技有限公司
     </author>
-    <icon src="www/img/icon.png"/>
-    <!-- <splash src="www/img/screen/android/default.png"/> -->
     <content src="index.html"/>
     <access origin="*"/>
     <!-- <allow-navigation href="*://*.nhw360.com/*" />
@@ -27,6 +25,7 @@
         <preference name="SplashScreenDelay" value="10000"/>
         <preference name="AndroidLaunchMode" value="singleTop"/>
 
+        <icon src="www/img/icon.png"/>
         <splash src="www/img/screen/android/default.png" density="hdpi"/>
         <splash src="www/img/screen/android/default.png" density="ldpi"/>
         <splash src="www/img/screen/android/default.png" density="mdpi"/>
@@ -37,6 +36,7 @@
     <platform name="ios">
         <allow-intent href="itms:*"/>
         <allow-intent href="itms-apps:*"/>
+        <allow-intent href="itms-services:*"/>
 
         <!-- <preference name="ErrorUrl" value="/no-connection.html" /> -->
 
