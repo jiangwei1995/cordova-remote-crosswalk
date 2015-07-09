@@ -8,5 +8,6 @@ www/js/*.js
 *.DS_Store
 .gradle/
 *.apk
+*.log
 
 _floatsignTemp/

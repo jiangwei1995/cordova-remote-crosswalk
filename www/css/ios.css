@@ -1,0 +1,39 @@
+/** iPhone 6 */
+@media only screen
+and (device-width : 375px)
+and (device-height : 667px)
+and (orientation : portrait) {
+  .main {
+    background-image: url(../img/screen/iphone/Default-667h@2x.png) !important;
+  }
+}
+
+/** iPhone 6 Plus */
+@media only screen
+and (device-width : 414px)
+and (device-height : 736px)
+and (orientation : portrait) {
+  .main {
+    background-image: url(../img/screen/iphone/Default-Portrait-736h@3x.png) !important;
+  }
+}
+
+/** iPhone 5 & 5s */
+@media only screen
+and (device-width : 320px)
+and (device-height : 568px)
+and (orientation : portrait) {
+  .main {
+    background-image: url(../img/screen/iphone/Default-568h@2x.png) !important;
+  }
+}
+
+/** iPhone 2G -4S */
+@media only screen
+and (device-width : 320px)
+and (device-height : 480px)
+and (orientation : portrait) {
+  .main {
+    background-image: url(../img/screen/iphone/Default@2x.png) !important;
+  }
+}

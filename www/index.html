@@ -10,14 +10,8 @@
     * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
       * Enable inline JS: add 'unsafe-inline' to default-src
   -->
-  <meta charset="UTF-8">
-  <meta http-equiv="Content-Security-Policy" content="
-    default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval';
-    connect-src *;
-    script-src 'self' 'unsafe-inline';
-    style-src 'self' 'unsafe-inline';
-    media-src *
-  ">
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-eval' 'unsafe-inline'">
   <meta name="format-detection" content="telephone=no">
   <meta name="msapplication-tap-highlight" content="no">
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
@@ -26,18 +20,31 @@
   <link rel="stylesheet" href="css/index.css">
 
   <title>Launcher</title>
+  <script>
+  /**
+   * fix for ios splashscreen                                        [description]
+   */
+  if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+    var file=document.createElement('link');
+    file.setAttribute('rel', 'stylesheet');
+    file.setAttribute('href', 'css/ios.css');
+    document.getElementsByTagName('head')[0].appendChild(file);
+  }
+  </script>
   <style>
-    .main {
-      height: 100vh;
-      /*background-color: #219D3B;*/
-      background-image: url(img/app/assets/android/images/res-notlong-port-xxhdpi/default.png);
-      background-size: 100% 100%;
-    }
+  /**
+   * default splashscreen
+   */
+  .main {
+    height: 100vh;
+    background-image: url(img/screen/android/default.png);
+    background-size: 100% 100%;
+    background-position: center center;
+  }
   </style>
 </head>
 <body>
 
-  <!-- <iframe class="main"></iframe> -->
   <div class="main">
 
   </div>
